@@ -35,3 +35,11 @@ $ zig build -Drelease=true
 $ ls *.wasm
 example.wasm
 ```
+
+## References
+
+* https://github.com/daneelsan/minimal-zig-wasm-canvas
+* https://github.com/daneelsan/zig-wefx
+* https://github.com/ziglang/zig/blob/master/lib/std/io/writer.zig
+* https://github.com/hexops/mach/blob/main/src/platform/wasm.zig
+* https://github.com/hexops/mach/blob/main/src/platform/mach.js
