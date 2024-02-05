@@ -1,15 +1,17 @@
 const std = @import("std");
 
-pub fn build(b: *std.build.Builder) void {
-    const lib = b.addSharedLibrary(.{
+pub fn build(b: *std.Build) void {
+    const target = b.resolveTargetQuery(.{
+        .cpu_arch = .wasm32,
+        .os_tag = .freestanding,
+    });
+    const exe = b.addExecutable(.{
         .name = "example",
         .root_source_file = .{ .path = "./example.zig" },
-        .target = .{
-            .cpu_arch = .wasm32,
-            .os_tag = .freestanding,
-        },
+        .target = target,
         .optimize = .ReleaseSmall,
     });
-    lib.rdynamic = true;
-    b.installArtifact(lib);
+    exe.entry = .disabled;
+    exe.rdynamic = true;
+    b.installArtifact(exe);
 }

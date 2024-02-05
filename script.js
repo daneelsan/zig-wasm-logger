@@ -26,7 +26,7 @@ let importObject = {
 };
 
 async function bootstrap() {
-    wasm.init(await WebAssembly.instantiateStreaming(fetch("./zig-out/lib/example.wasm"), importObject));
+    wasm.init(await WebAssembly.instantiateStreaming(fetch("./zig-out/bin/example.wasm"), importObject));
 
     const step = wasm.instance.exports.step;
 

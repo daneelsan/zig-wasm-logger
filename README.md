@@ -29,16 +29,16 @@ export fn step(timestamp: f32) void {
 
 ```shell
 $ zig version
-0.11.0
+0.12.0-dev.2341+92211135f
 ```
 
 ```shell
-$ zig build
+$ zig build --verbose
 ```
 
 ```shell
-$ ls zig-out/lib/*.wasm
-zig-out/lib/example.wasm
+$ ls zig-out/bin/*.wasm
+zig-out/bin/example.wasm
 ```
 
 ## References
