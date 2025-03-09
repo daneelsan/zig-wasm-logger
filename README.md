@@ -29,7 +29,7 @@ export fn step(timestamp: f32) void {
 
 ```shell
 $ zig version
-0.12.0-dev.2341+92211135f
+0.14.0
 ```
 
 ```shell
@@ -43,8 +43,8 @@ zig-out/bin/example.wasm
 
 ## References
 
-* https://github.com/daneelsan/minimal-zig-wasm-canvas
-* https://github.com/daneelsan/zig-wefx
-* https://github.com/ziglang/zig/blob/master/lib/std/io/writer.zig
-* https://github.com/hexops/mach/blob/main/src/platform/wasm.zig
-* https://github.com/hexops/mach/blob/main/src/platform/mach.js
+-   https://github.com/daneelsan/minimal-zig-wasm-canvas
+-   https://github.com/daneelsan/zig-wefx
+-   https://github.com/ziglang/zig/blob/master/lib/std/io/writer.zig
+-   https://github.com/hexops/mach/blob/main/src/platform/wasm.zig
+-   https://github.com/hexops/mach/blob/main/src/platform/mach.js
